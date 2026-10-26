@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BetPro - Premium Betting Platform</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'sans-serif'] },
+          colors: {
+            primary: '#2563EB',
+            'primary-dark': '#1D4ED8',
+            secondary: '#3B82F6',
+            cta: '#F97316',
+            'cta-dark': '#EA580C',
+            surface: '#F8FAFC',
+            'text-primary': '#1E293B',
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Inter', sans-serif; color: #1E293B; background: #F8FAFC; }
+    .glass {
+      background: rgba(255,255,255,0.7);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(255,255,255,0.3);
+    }
+    .glass-card {
+      background: rgba(255,255,255,0.6);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(255,255,255,0.4);
+      box-shadow: 0 8px 32px rgba(37,99,235,0.08);
+    }
+    .gradient-bg {
+      background: linear-gradient(135deg, #2563EB 0%, #1D4ED8 50%, #1E3A8A 100%);
+    }
+    .gradient-cta {
+      background: linear-gradient(135deg, #F97316, #EA580C);
+    }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="fixed top-4 left-4 right-4 z-50 glass rounded-2xl px-6 py-3 max-w-7xl mx-auto">
+    <div class="flex items-center justify-between">
+      <a href="#" class="text-2xl font-extrabold text-primary tracking-tight">BetPro</a>
+      <div class="hidden md:flex items-center gap-8">
+        <a href="#features" class="text-sm font-medium text-text-primary/70 hover:text-primary transition-colors duration-200">Features</a>
+        <a href="#sports" class="text-sm font-medium text-text-primary/70 hover:text-primary transition-colors duration-200">Sports</a>
+        <a href="#testimonials" class="text-sm font-medium text-text-primary/70 hover:text-primary transition-colors duration-200">Reviews</a>
+        <a href="#cta" class="text-sm font-medium text-text-primary/70 hover:text-primary transition-colors duration-200">Get Started</a>
+      </div>
+      <div class="flex items-center gap-3">
+        <a href="#" class="hidden sm:inline-block text-sm font-semibold text-text-primary hover:text-primary transition-colors duration-200 cursor-pointer">Log In</a>
+        <a href="#" class="inline-flex items-center px-5 py-2.5 rounded-xl text-sm font-semibold text-white gradient-cta hover:opacity-90 transition-opacity duration-200 cursor-pointer shadow-lg shadow-orange-500/25">Sign Up</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="relative min-h-screen flex items-center overflow-hidden pt-20">
+    <div class="absolute inset-0 gradient-bg opacity-[0.03]"></div>
+    <div class="absolute top-1/4 -left-32 w-96 h-96 bg-primary/10 rounded-full blur-3xl"></div>
+    <div class="absolute bottom-1/4 -right-32 w-96 h-96 bg-cta/10 rounded-full blur-3xl"></div>
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <div>
+          <div class="inline-flex items-center gap-2 glass-card rounded-full px-4 py-2 text-sm font-medium text-primary mb-8">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+            Live betting 24/7
+          </div>
+          <h1 class="text-5xl sm:text-6xl lg:text-7xl font-black text-text-primary leading-[1.1] tracking-tight mb-6">
+            Your Next<br />
+            <span class="text-primary">Big Win</span> Starts Here
+          </h1>
+          <p class="text-lg sm:text-xl text-text-primary/60 leading-relaxed mb-10 max-w-lg">
+            Premium odds, instant payouts, and a world-class betting experience across 50+ sports. Join 2M+ active players.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4">
+            <a href="#" class="inline-flex items-center justify-center px-8 py-4 rounded-2xl text-base font-bold text-white gradient-cta hover:opacity-90 transition-opacity duration-200 cursor-pointer shadow-xl shadow-orange-500/30">Get $200 Bonus</a>
+            <a href="#" class="inline-flex items-center justify-center px-8 py-4 rounded-2xl text-base font-bold text-primary glass-card hover:bg-white/80 transition-all duration-200 cursor-pointer">View Live Odds</a>
+          </div>
+          <div class="flex items-center gap-6 mt-10 pt-8 border-t border-gray-200">
+            <div class="flex -space-x-2">
+              <div class="w-8 h-8 rounded-full bg-gradient-to-br from-blue-500 to-blue-700 border-2 border-white"></div>
+              <div class="w-8 h-8 rounded-full bg-gradient-to-br from-orange-500 to-orange-700 border-2 border-white"></div>
+              <div class="w-8 h-8 rounded-full bg-gradient-to-br from-green-500 to-green-700 border-2 border-white"></div>
+            </div>
+            <p class="text-sm text-text-primary/50">Trusted by <span class="font-semibold text-text-primary">2M+</span> bettors worldwide</p>
+          </div>
+        </div>
+        <div class="hidden lg:block relative">
+          <div class="glass-card rounded-3xl p-8 relative z-10">
+            <div class="flex items-center justify-between mb-6">
+              <span class="text-sm font-semibold text-text-primary/70 uppercase tracking-wide">Live Betting</span>
+              <span class="text-xs font-medium text-green-600 bg-green-100 px-3 py-1 rounded-full">12 events live</span>
+            </div>
+            <div class="space-y-4">
+              <div class="flex items-center justify-between p-4 rounded-xl bg-white/50 hover:bg-white/80 transition-colors duration-200 cursor-pointer">
+                <div>
+                  <p class="text-sm font-semibold text-text-primary">Manchester United vs Liverpool</p>
+                  <p class="text-xs text-text-primary/50 mt-0.5">Premier League</p>
+                </div>
+                <div class="flex gap-2">
+                  <span class="px-3 py-1.5 rounded-lg bg-white text-xs font-bold text-text-primary border border-gray-200 hover:border-primary transition-colors duration-200">1.85</span>
+                  <span class="px-3 py-1.5 rounded-lg bg-white text-xs font-bold text-text-primary border border-gray-200 hover:border-primary transition-colors duration-200">3.40</span>
+                  <span class="px-3 py-1.5 rounded-lg bg-white text-xs font-bold text-text-primary border border-gray-200 hover:border-primary transition-colors duration-200">2.10</span>
+                </div>
+              </div>
+              <div class="flex items-center justify-between p-4 rounded-xl bg-white/50 hover:bg-white/80 transition-colors duration-200 cursor-pointer">
+                <div>
+                  <p class="text-sm font-semibold text-text-primary">Lakers vs Celtics</p>
+                  <p class="text-xs text-text-primary/50 mt-0.5">NBA</p>
+                </div>
+                <div class="flex gap-2">
+                  <span class="px-3 py-1.5 rounded-lg bg-white text-xs font-bold text-text-primary border border-gray-200 hover:border-primary transition-colors duration-200">1.95</span>
+                  <span class="px-3 py-1.5 rounded-lg bg-white text-xs font-bold text-text-primary border border-gray-200 hover:border-primary transition-colors duration-200">3.10</span>
+                  <span class="px-3 py-1.5 rounded-lg bg-white text-xs font-bold text-text-primary border border-gray-200 hover:border-primary transition-colors duration-200">2.25</span>
+                </div>
+              </div>
+              <div class="flex items-center justify-between p-4 rounded-xl bg-white/50 hover:bg-white/80 transition-colors duration-200 cursor-pointer">
+                <div>
+                  <p class="text-sm font-semibold text-text-primary">Djokovic vs Alcaraz</p>
+                  <p class="text-xs text-text-primary/50 mt-0.5">Wimbledon Final</p>
+                </div>
+                <div class="flex gap-2">
+                  <span class="px-3 py-1.5 rounded-lg bg-white text-xs font-bold text-text-primary border border-gray-200 hover:border-primary transition-colors duration-200">2.50</span>
+                  <span class="px-3 py-1.5 rounded-lg bg-white text-xs font-bold text-text-primary border border-gray-200 hover:border-primary transition-colors duration-200">1.55</span>
+                </div>
+              </div>
+            </div>
+            <a href="#" class="mt-6 flex items-center justify-center gap-2 w-full py-3 rounded-xl text-sm font-bold text-primary bg-primary/10 hover:bg-primary/20 transition-colors duration-200 cursor-pointer">View All Events</a>
+          </div>
+          <div class="absolute -bottom-6 -right-6 w-full h-full rounded-3xl bg-primary/5 -z-10"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="features" class="py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl sm:text-5xl font-black text-text-primary tracking-tight mb-4">Built for Winners</h2>
+        <p class="text-lg text-text-primary/60 max-w-2xl mx-auto">Everything you need to bet smarter, faster, and with total confidence.</p>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="glass-card rounded-2xl p-8 hover:shadow-xl hover:-translate-y-1 transition-all duration-200 cursor-pointer group">
+          <div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-5 group-hover:bg-primary/20 transition-colors duration-200">
+            <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/></svg>
+          </div>
+          <h3 class="text-xl font-bold text-text-primary mb-3">Live Odds Tracker</h3>
+          <p class="text-sm text-text-primary/60 leading-relaxed">Real-time odds updates across 50+ sports with instant notifications on line movements.</p>
+        </div>
+        <div class="glass-card rounded-2xl p-8 hover:shadow-xl hover:-translate-y-1 transition-all duration-200 cursor-pointer group">
+          <div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-5 group-hover:bg-primary/20 transition-colors duration-200">
+            <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </div>
+          <h3 class="text-xl font-bold text-text-primary mb-3">Instant Payouts</h3>
+          <p class="text-sm text-text-primary/60 leading-relaxed">Withdraw your winnings in minutes with 20+ payment methods including crypto.</p>
+        </div>
+        <div class="glass-card rounded-2xl p-8 hover:shadow-xl hover:-translate-y-1 transition-all duration-200 cursor-pointer group">
+          <div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-5 group-hover:bg-primary/20 transition-colors duration-200">
+            <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+          </div>
+          <h3 class="text-xl font-bold text-text-primary mb-3">Bank-Grade Security</h3>
+          <p class="text-sm text-text-primary/60 leading-relaxed">256-bit encryption, 2FA authentication, and full regulatory compliance.</p>
+        </div>
+        <div class="glass-card rounded-2xl p-8 hover:shadow-xl hover:-translate-y-1 transition-all duration-200 cursor-pointer group">
+          <div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-5 group-hover:bg-primary/20 transition-colors duration-200">
+            <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </div>
+          <h3 class="text-xl font-bold text-text-primary mb-3">Live Streaming</h3>
+          <p class="text-sm text-text-primary/60 leading-relaxed">Watch and bet simultaneously with HD streaming on thousands of events monthly.</p>
+        </div>
+        <div class="glass-card rounded-2xl p-8 hover:shadow-xl hover:-translate-y-1 transition-all duration-200 cursor-pointer group">
+          <div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-5 group-hover:bg-primary/20 transition-colors duration-200">
+            <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+          </div>
+          <h3 class="text-xl font-bold text-text-primary mb-3">Smart Analytics</h3>
+          <p class="text-sm text-text-primary/60 leading-relaxed">AI-powered insights, historical data, and trend analysis to inform your bets.</p>
+        </div>
+        <div class="glass-card rounded-2xl p-8 hover:shadow-xl hover:-translate-y-1 transition-all duration-200 cursor-pointer group">
+          <div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-5 group-hover:bg-primary/20 transition-colors duration-200">
+            <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z"/></svg>
+          </div>
+          <h3 class="text-xl font-bold text-text-primary mb-3">Referral Program</h3>
+          <p class="text-sm text-text-primary/60 leading-relaxed">Earn 20% commission on referrals for life. Unlimited earning potential.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="cta" class="py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="relative overflow-hidden rounded-3xl gradient-bg p-12 sm:p-16 text-center">
+        <div class="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full -translate-y-1/2 translate-x-1/2"></div>
+        <div class="absolute bottom-0 left-0 w-48 h-48 bg-white/5 rounded-full translate-y-1/2 -translate-x-1/2"></div>
+        <div class="relative z-10">
+          <h2 class="text-3xl sm:text-5xl font-black text-white tracking-tight mb-4">Ready to Play?</h2>
+          <p class="text-lg text-white/70 max-w-xl mx-auto mb-10">Get a 100% match bonus up to $500 on your first deposit. No strings attached.</p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="#" class="inline-flex items-center justify-center px-10 py-4 rounded-2xl text-base font-bold text-primary bg-white hover:bg-white/90 transition-all duration-200 cursor-pointer shadow-xl">Create Account</a>
+            <a href="#" class="inline-flex items-center justify-center px-10 py-4 rounded-2xl text-base font-bold text-white border-2 border-white/30 hover:bg-white/10 transition-all duration-200 cursor-pointer">Claim Bonus</a>
+          </div>
+          <p class="text-sm text-white/50 mt-6">No minimum deposit. Withdraw anytime. 18+ only. T&Cs apply.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="py-12 border-t border-gray-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
+        <p class="text-sm text-text-primary/50">&copy; 2026 BetPro. All rights reserved.</p>
+        <div class="flex items-center gap-6">
+          <a href="#" class="text-sm text-text-primary/50 hover:text-primary transition-colors duration-200 cursor-pointer">Privacy Policy</a>
+          <a href="#" class="text-sm text-text-primary/50 hover:text-primary transition-colors duration-200 cursor-pointer">Terms of Service</a>
+          <a href="#" class="text-sm text-text-primary/50 hover:text-primary transition-colors duration-200 cursor-pointer">Responsible Gaming</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
